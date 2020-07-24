@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecipeView" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardVIewViewRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="415dp"
+                android:layout_weight="4"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTitleView"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:text="Title"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            app:autoSizeTextType="uniform"
+                            app:fontFamily="@font/simonetta_regular" />
+
+                        <TextView
+                            android:id="@+id/tvpreparationMinutes2"
+                            app:fontFamily="@font/istok_web_regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center|top|left"
+                            android:text="preparation Minutes"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="15sp"
+
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/IngredientsText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ingredients:"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/istok_web_regular" />
+
+                        <TextView
+                            android:id="@+id/tvnIngredientsView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ingredients"
+                            app:fontFamily="@font/istok_web_regular"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:id="@+id/InstructionstextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Instructions:"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/istok_web_regular" />
+
+                        <TextView
+                            android:id="@+id/tvDescriptionView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:fontFamily="@font/istok_web_regular"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:text="Description"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            app:autoSizeTextType="uniform" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
